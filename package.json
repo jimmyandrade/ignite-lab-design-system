@@ -44,7 +44,7 @@
     "vite": "^3.1.0"
   },
   "overrides": {
-    "glob-parent": "5.1.2",
+    "glob-parent": "6.0.2",
     "parse-path": "5.0.0",
     "parse-url": "8.1.0",
     "react": "18.2.0",
