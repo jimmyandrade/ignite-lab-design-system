@@ -9,9 +9,11 @@ module.exports = {
     builder: "@storybook/builder-vite"
   },
   features: {
+    interactionsDebugger: true,
     storyStoreV7: true
   },
   framework: "@storybook/react",
+  staticDirs: ["../public"],
   stories: [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
