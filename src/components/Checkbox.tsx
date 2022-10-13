@@ -1,14 +1,17 @@
 import * as PrimitiveCheckbox from "@radix-ui/react-checkbox";
+import type { CheckboxProps as PrimitiveCheckboxProps } from "@radix-ui/react-checkbox";
 
 import { Check } from "phosphor-react";
 import type { FC } from "react";
 import { clsx } from "clsx";
 
-export interface CheckboxProps {
+export interface CheckboxProps extends PrimitiveCheckboxProps {
 }
 
 export const Checkbox: FC<CheckboxProps> = (
   {
+    id,
+    ...props
   }
 ) => {
 
@@ -16,7 +19,7 @@ export const Checkbox: FC<CheckboxProps> = (
   const indicatorClassNames = clsx('h-5 text-cyan-500 w-5');
 
   return (
-    <PrimitiveCheckbox.Root className={rootClassNames}>
+    <PrimitiveCheckbox.Root id={id} className={rootClassNames} {...props}>
       <PrimitiveCheckbox.CheckboxIndicator asChild={true}>
         <Check className={indicatorClassNames} weight={"bold"} />
       </PrimitiveCheckbox.CheckboxIndicator>

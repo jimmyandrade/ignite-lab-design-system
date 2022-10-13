@@ -15,6 +15,7 @@ export const Button: FC<ButtonProps> = (
     asChild = false,
     children,
     className,
+    type,
     ...props
   }
 ) => {
@@ -22,12 +23,12 @@ export const Button: FC<ButtonProps> = (
   const Component = asChild ? Slot : "button";
 
   const classNames = clsx(
-    'bg-cyan-500 font-sans font-semibold outline-none px-3 py-4 rounded text-black text-sm w-full transition-colors focus:ring-2 ring-white hover:bg-cyan-300',
+    'bg-cyan-500 font-sans font-semibold outline-none px-4 py-3 rounded text-black text-sm w-full transition-colors focus:ring-2 ring-white hover:bg-cyan-300',
     className
   );
 
   return (
-    <Component className={classNames} {...props}>
+    <Component className={classNames} type={type} {...props}>
       {children}
     </Component>
   );

@@ -20,6 +20,7 @@ export const Text: FC<TextProps> = (
     asChild = false,
     children,
     className,
+    id,
     size = "md",
     ...props
   }
@@ -37,5 +38,5 @@ export const Text: FC<TextProps> = (
     className
   );
 
-  return <Component className={classNames} {...props}>{children}</Component>
+  return <Component id={id} className={classNames} {...props}>{children}</Component>
 }
