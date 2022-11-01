@@ -61,7 +61,7 @@
     "react-dom": "18.2.0",
     "trim": "1.0.1",
     "trim-newlines": "4.0.2",
-    "webpack": "5.67.0"
+    "webpack": "5.74.0"
   },
   "msw": {
     "workerDirectory": "public"
