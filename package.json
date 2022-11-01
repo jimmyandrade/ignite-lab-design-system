@@ -52,16 +52,21 @@
     "vite": "3.2.2"
   },
   "overrides": {
-    "@xmldom/xmldom": "0.7.7 || 0.8.4 || 0.9.0-beta.4",
+    "@xmldom/xmldom": "0.8.4",
+    "babel-loader": "$babel-loader",
     "glob-parent": "6.0.2",
     "parse-path": "7.0.0",
     "parse-url": "8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "trim": "1.0.1",
-    "trim-newlines": "4.0.2"
+    "trim-newlines": "4.0.2",
+    "webpack": "5.67.0"
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "engines": {
+    "node": ">=18.12.0"
   }
 }
