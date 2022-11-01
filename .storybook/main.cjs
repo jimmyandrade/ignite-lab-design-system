@@ -6,7 +6,8 @@ module.exports = {
     "@storybook/addon-a11y"
   ],
   core: {
-    builder: "@storybook/builder-vite"
+    builder: "@storybook/builder-vite",
+    disableTelemetry: false
   },
   features: {
     interactionsDebugger: true,
