@@ -52,7 +52,7 @@
     "vite": "3.2.2"
   },
   "overrides": {
-    "@xmldom/xmldom": "0.8.4",
+    "@xmldom/xmldom": "0.8.5",
     "glob-parent": "6.0.2",
     "parse-path": "7.0.0",
     "parse-url": "8.1.0",
