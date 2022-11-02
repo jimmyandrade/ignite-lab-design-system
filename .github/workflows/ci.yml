@@ -1,12 +1,9 @@
-name: Deploy Storybook
+name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  build-and-deploy:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install dependencies
         run: npm ci
@@ -26,5 +23,6 @@ jobs:
 
       - name: Deploy Storybook to GitHub Pages
         run: npm run deploy-storybook -- -ci --existing-output-dir=storybook-static
+        if: github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
