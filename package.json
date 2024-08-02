@@ -42,7 +42,7 @@
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@vitejs/plugin-react": "2.2.0",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.20",
     "babel-loader": "8.2.5",
     "msw": "0.47.4",
     "msw-storybook-addon": "1.6.3",
