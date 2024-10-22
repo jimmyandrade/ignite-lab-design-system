@@ -23,7 +23,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.19.6",
+    "@babel/core": "7.25.9",
     "@radix-ui/react-checkbox": "1.0.1",
     "@storybook/addon-a11y": "6.5.13",
     "@storybook/addon-actions": "6.5.13",
