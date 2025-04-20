@@ -54,7 +54,7 @@
   "overrides": {
     "@xmldom/xmldom": "0.8.5",
     "glob-parent": "6.0.2",
-    "parse-path": "7.0.0",
+    "parse-path": "7.1.0",
     "parse-url": "8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
